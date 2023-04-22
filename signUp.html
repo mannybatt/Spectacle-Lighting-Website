@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script src="/static/js/jquery-3.5.1.js"></script>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+
+   {% extends "template.html" %}
+    {% block content %}
+
+   <h2> Get your account today! </h2>
+    
+     
+      <div class="jumbotron" style="background-image: url(/static/assets/signup.jpeg); background-size: cover">
+        <h1 class="signUpFont">Sign Up</h1>
+        <form class="form-signin" style="height=200px;width=450px">
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+         
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">Sign up</button>
+
+      </form>
+      </div>
+    
+    
+ 
+       
+ 
+      
+ 
+    </div>
+
+    
+
+    
+    
+    {% endblock %}
+  </body>
+</html>
